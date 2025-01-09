@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oskar Jasinski Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="/Files/logo3.png" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p><strong>UI/UX Designer</strong></p>
+          <h1>Hi, I'm <span>Oskar</span> Jasinski</h1>
+        </div>
+      </div>
+    </div>
+    <!-- ------------ about ------------------ -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="/Files/main1.jpg" alt="" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <br />
+
+            <p>
+              I was born and raised in Poland, where I spent the first 21 years
+              of my life before moving to London. I lived in the vibrant city
+              for over nine years before settling in Farnborough, a charming
+              city just 40 minutes outside of London.
+              <br /><br />
+              I’m fluent in both Polish and English, and I have a growing
+              passion for technology and coding. In my free time, I enjoy
+              competitive gaming, traveling, and exploring 15 countries across
+              Europe. I’m always eager to take on new challenges and connect
+              with like-minded individuals. Let’s create something amazing
+              together!
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Technical Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experiance')">
+                Soft Skills
+              </p>
+              <p class="tab-links" onclick="opentab('education')">
+                Training and Education
+              </p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Object-Oriented Programming</span><br />Knowledge of
+                  object-oriented programming principles (encapsulation,
+                  inheritance)
+                </li>
+                <li>
+                  <span>Modern Web Development Tools</span><br />Foundational
+                  experience with modern web development tools: NPM, Parcel,
+                  Babel
+                </li>
+                <li>
+                  <span>Asynchronous API Handling</span><br />API handling using
+                  asynchronous JavaScript, promises, async/await.
+                </li>
+                <li>
+                  <span>Full-Stack Development Fundamentals</span
+                  ><br />Understanding of HTML, CSS, JavaScript, React, Python
+                  and SQL
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experiance">
+              <ul>
+                <li>
+                  <span>Communication & Leadership </span><br />Demonstrates
+                  strong communication skills and the ability to effectively
+                  lead and motivate teams toward shared goals.
+                </li>
+                <li>
+                  <span>Problem-Solving & Stress Management</span><br />Excels
+                  in problem-solving under pressure and managing stress to
+                  deliver effective solutions in challenging situations.
+                </li>
+                <li>
+                  <span>Adaptability & Organization</span><br />Highly adaptable
+                  to changing circumstances with well-developed organizational
+                  skills to manage tasks efficiently.
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2025 - now</span><br />Currently enrolled in a React
+                  course on Udemy to deepen my skills
+                </li>
+                <li>
+                  <span>10/24 – 01/25 </span><br />Just IT Training Ltd, London
+                  Digital Skills Bootcamp: Software Development
+                  <p>
+                    A twelve-week intensive bootcamp covering the fundamentals
+                    of Software Development. <br />- Development of HTML <br />-
+                    Introduction to HTML/JavaScript/CSS/SQL <br />- Developed a
+                    web-based product <br />- Database design <br />- Built a
+                    product using Python
+                  </p>
+                </li>
+                <li>
+                  <span>06/24 – 09/24</span><br />The Complete JavaScript
+                  Course, Udemy <br />
+                  - Built five projects demonstrating JavaScript fundamentals,
+                  application flow, and object-oriented programming. <br />
+                  - Advanced skills in modern JavaScript, handling asynchronous
+                  operations, and interfacing with APIs.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ---------- services ---------- -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">Skills</h1>
+        <br />
+        <br />
+        <p>
+          I am a passionate and detail-oriented developer with a strong
+          foundation in web development and programming. <br />After completing
+          a comprehensive software bootcamp at <strong>Just IT</strong>, I
+          gained hands-on experience with key technologies and best practices in
+          the industry.
+        </p>
+        <div class="services-list">
+          <div>
+            <i class="fa-brands fa-js"></i>
+            <h2>JavaScript</h2>
+            <p>
+              Completed a comprehensive JavaScript course on Udemy, mastering
+              core concepts, modern ES6+ features, and building dynamic web
+              applications.
+            </p>
+            <!-- <a href="#">Learne more</a> -->
+          </div>
+          <div>
+            <i class="fa-brands fa-react"></i>
+            <h2>React</h2>
+            <p>
+              Started a React course on Udemy, learning components, state
+              management, and building interactive user interfaces.
+            </p>
+            <!-- <a href="#">Learne more</a> -->
+          </div>
+          <div>
+            <i class="fa-brands fa-python"></i>
+
+            <h2>Python</h2>
+            <p>
+              Learned Python through a bootcamp, covering programming
+              fundamentals, data structures, and practical applications
+            </p>
+            <!-- <a href="#">Learne more</a> -->
+          </div>
+          <div>
+            <i class="fa-brands fa-html5"></i>
+            <h2>HTML</h2>
+            <p>
+              Learned HTML through a bootcamp, focusing on building structured
+              and semantic web pages.
+            </p>
+            <!-- <a href="#">Learne more</a> -->
+          </div>
+          <div>
+            <i class="fa-brands fa-css3-alt"></i>
+            <h2>CSS</h2>
+            <p>
+              Learned CSS through a bootcamp, mastering styling, layout
+              techniques, and responsive design for web pages.
+            </p>
+            <!-- <a href="#">Learne more</a> -->
+          </div>
+          <div>
+            <i class="fa-solid fa-database"></i>
+
+            <h2>SQL</h2>
+            <p>
+              Learned SQL through a bootcamp, focusing on database management,
+              queries, and data manipulation techniques.
+            </p>
+            <!-- <a href="#">Learne more</a> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ------------ portfolio -------------- -->
+
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="/Files/bankistphone-fotor-2025010892947.png" />
+            <div class="layer">
+              <h3>Bankist</h3>
+              <p>
+                Manage your finances effortlessly with secure access to
+                accounts, transactions, and banking services online.
+              </p>
+              <a href="https://ojasinski94.github.io/Bankist/"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="work">
+            <img src="/Files/maptyphone-fotor-2025010892728.png" />
+            <div class="layer">
+              <h3>mapty</h3>
+              <p>
+                Track your location and pin your workouts on the map for easy
+                logging and visualization.
+              </p>
+              <a href="https://ojasinski94.github.io/Mapty/"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="/Files/calculator.png" />
+            <div class="layer">
+              <h3>Calculator</h3>
+              <p>
+                A simple, user-friendly calculator built using HTML and CSS,
+                designed for basic arithmetic operations like addition,
+                subtraction, multiplication, and division. The clean layout and
+                responsive design make it easy to use on both desktop and mobile
+                devices.
+              </p>
+              <a href="https://ojasinski94.github.io/calculator/"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="/Files/weather.png" />
+            <div class="layer">
+              <h3>Weather App</h3>
+              <p>
+                Check the weather anytime with my simple and reliable Weather
+                App! Get current temperature, conditions, for any city. Easy to
+                use and perfect for staying prepared, no matter the weather."
+              </p>
+              <a href="https://ojasinski94.github.io/weatherApp/"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="/Files/pigphone-fotor-2025010893027.png" />
+            <div class="layer">
+              <h3>Pig Game</h3>
+              <p>
+                Roll the dice, strategize, and race to 100 in this fun and
+                competitive game of luck and skill!
+              </p>
+              <a href="https://ojasinski94.github.io/pigGame-English/"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">More coming soon</a>
+      </div>
+    </div>
+    <!--  ---------- contact ----------- -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i>oskarjasinski94@gmail.com
+            </p>
+            <p>
+              <i class="fa-solid fa-square-phone-flip fa-flip-horizontal"></i
+              >07465204581
+            </p>
+            <div class="social-icons">
+              <a href="https://www.linkedin.com/in/oskar-j-732a621b3/"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://github.com/oJasinski94"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a href="https://www.instagram.com/jasinskio/"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+            </div>
+            <a href="/Files/CV.docx" download class="btn btn2">Download CV</a>
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your name" required />
+              <input
+                type="email"
+                name="eMail"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
